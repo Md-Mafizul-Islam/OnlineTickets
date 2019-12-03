@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="passengMaster.master.cs" Inherits="OnlineTicket.Passenger.passengMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script language="javascript" type="text/javascript">
+// <!CDATA[
+
+
+
+// ]]>
+</script>
+</head>
+<body>
+     <form id="form1" runat="server">
+   <div style="text-align: center">
+        <table id="TABLE1" border="0" cellpadding="0" cellspacing="0" onclick="return TABLE1_onclick()"
+            style="border-right: black thick solid; border-top: black thick solid; border-left: black thick solid;
+            width: 80%; border-bottom: black thick solid; height: 85%">
+            <tr>
+                <td colspan="2" style="width: 100%; height: 25px; background-color: skyblue; text-align: right">
+                    <asp:HyperLink ID="hpllogin" runat="server" Font-Bold="True" Font-Underline="True"
+                        NavigateUrl="~/passenger/login.aspx">LogIn</asp:HyperLink></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 100%; height: 100px; vertical-align: middle; text-align: left;">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/image/Skyline.jpg" Width="100%" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 100%; height: 3px; background-color: skyblue">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 100%; height: 28px; background-color: skyblue; text-align: left">
+                    <table>
+                        <tr>
+                            <td style="width: 100px; height: 20px">
+                                &nbsp;<asp:Button ID="btnHome" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                                     Height="23px" Text="HOME" Width="95px" PostBackUrl="~/Passenger/MainPage.aspx"/>
+                            </td>
+                          <td style="width: 100px; height: 20px">
+                                &nbsp;<asp:Button ID="btnchkfarep" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                                     Height="23px" Text="Chacke Fare" Width="95px" PostBackUrl="~/Passenger/ChackFare.aspx"/>
+                            </td>
+                            <td style="width: 100px; height: 20px">
+                                <asp:Button ID="btncancle" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                                    Text="CANCELLATION" Width="122px" PostBackUrl="~/Passenger/cancle.aspx" /></td>
+                            <td style="width: 100px; height: 20px">
+                                <asp:Button ID="brnaboutp" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                                    Text="ABOUT US" Width="122px" PostBackUrl="~/static/1about_us.aspx" /></td>
+                            <td style="width: 101px; height: 20px">
+                                <asp:Button ID="Button5" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                                    Text="CONTACT US" Width="122px" PostBackUrl="~/static/2contact_us.aspx" /></td>
+                            <td style="width: 100px; height: 20px">
+                                <asp:Button ID="btnbukoffice" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                                    Text="BOOKING OFFICES" Width="138px" PostBackUrl="~/static/3bookingoffic.aspx" /></td>
+                            <td style="width: 100px; height: 20px">
+                                <asp:Button ID="btnourbus" runat="server" BackColor="Gray" Font-Bold="True" ForeColor="WhiteSmoke"
+                                    Text="TERMS AND CONDITIONS" Width="190px" PostBackUrl="~/static/termncondition.aspx" /></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="width: 100%; height: 3px; background-color: skyblue; text-align: left">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="vertical-align: top; width: 15%; height: 549px; text-align: center">
+                    <marquee direction="up" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="2"
+                                                                scrolldelay="20" style="font-size: 12px; width: 229px; color: #ffffff; font-family: Vardana, Arial;
+                                                                height: 425px; text-align: justify; background-color: white;"><SPAN 
+      style="COLOR: #ffffff"><STRONG>&nbsp;</STRONG></SPAN><asp:Image id="Image5" runat="server" ImageUrl="~/image/newspin.gif" __designer:wfdid="w11" de></asp:Image><BR 
+      /><BR /><IMG style="WIDTH: 221px" id="IMG1" src="../image/skylines.jpg" onclick="return IMG1_onclick()" /><BR 
+      /><SPAN style="COLOR: #ffffff">&nbsp;&nbsp;<BR /></SPAN><SPAN 
+      style="COLOR: #ffffff"><SPAN style="FONT-SIZE: 14pt; COLOR: #0066cc">&nbsp;&nbsp;Weekend Gateways<BR 
+      /><BR />&nbsp;&nbsp;Corporate Tours<BR /><BR />&nbsp;&nbsp;Domestic 
+      Tours<BR /><BR />&nbsp;&nbsp;Holiday Packages<BR /><BR 
+      />&nbsp;&nbsp;International Tours<BR /><BR />&nbsp;&nbsp;National Tours<BR 
+      /><BR />&nbsp; Summer Packages</SPAN><BR /><BR 
+      /></SPAN></marquee>
+                    &nbsp;&nbsp;<br /><br />
+                   
+                </td>
+                <td colspan="1" style="vertical-align: top; width: 2741px; height: 549px; text-align: left">
+                    <table style="width: 100%; height: 567px">
+                        <tr>
+                            <td style="vertical-align: top; width: 73%; text-align: left">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td style="vertical-align: top; width: 15%; text-align: right">
+                                <strong><span style="font-size: 10pt; color: #75b900; font-family: Arial">
+                                    <div style="text-align: center">
+                                        <table style="width: 100%">
+                                            <tr>
+                                                <td style="vertical-align: top; width: 100px; height: 149px; text-align: left">
+                                                    <asp:Image ID="Image2" runat="server" BorderColor="#E0E0E0" BorderStyle="Groove"
+                                                        BorderWidth="3px" Height="149px" ImageUrl="~/image/sundarbans.jpg"
+                                                        Width="254px" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: top; width: 100px; height: 149px; text-align: left">
+                                                    <asp:Image ID="Image3" runat="server" BorderColor="#E0E0E0" BorderStyle="Groove"
+                                                        BorderWidth="3px" Height="149px" ImageUrl="~/image/Tajhatpalace.jpg"
+                                                        Width="254px" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="vertical-align: top; width: 100px; height: 149px; text-align: left">
+                                                    <asp:Image ID="Image4" runat="server" BorderColor="#E0E0E0" BorderStyle="Groove"
+                                                        BorderWidth="3px" Height="149px" ImageUrl="~/image/Shylieath.jpg"
+                                                        Width="254px" /></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </span></strong>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="font-weight: bold; border-left-color: black; border-bottom-color: black;
+                    vertical-align: middle; text-transform: capitalize; width: 811px; color: maroon;
+                    border-top-style: solid; border-top-color: black; border-right-style: solid;
+                    border-left-style: solid; height: 25px; background-color: silver; text-align: center;
+                    border-right-color: black; border-bottom-style: solid">
+                    <marquee colspan="3" direction="left" onmouseout="this.start()" onmouseover="this.stop()"
+                        scrollamount="5" scrolldelay="20" style="width: 1069px; text-align: right; background-color: skyblue;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;www.skylinetr.com</marquee>
+                </td>
+            </tr>
+        </table>
+        &nbsp;</div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿body 
+{
+	
+}
+
+
+.lab
+{
+	font-style: normal ;
+	color: #ff0000;
+	
+}
+.hedtd
+{
+	font-weight: bold;
+	text-transform: capitalize;
+	 width: 100%;
+	  vertical-align: middle;
+	   text-align: center;
+	   
+	 
+}
+
+.lab1
+{
+	color: navy;
+	font-family: 'Book Antiqua';
+}
